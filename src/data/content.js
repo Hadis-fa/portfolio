@@ -9,16 +9,28 @@ export const PERSONAL = {
 };
 
 export const SKILLS = [
-  "React",
-  "TypeScript",
-  "Node.js",
   "Python",
-  "Next.js",
-  "PostgreSQL",
-  "Tailwind",
-  "Git",
-  "Docker",
+  "JavaScript",
+  "TypeScript",
+  "C++",
+  "C",
+  "SQL",
+  "MySQL",
+  "React",
+  "Node.js",
+  "Flask",
+  "PyTorch",
+  "Scikit-learn",
+  "Pandas",
+  "NumPy",
+  "Matplotlib",
+  "NLTK",
+  "Hugging Face",
+  "LLMs",
+  "Prompt Engineering",
   "REST APIs",
+  "AWS",
+  "Git",
 ];
 
 export const PROJECTS = [

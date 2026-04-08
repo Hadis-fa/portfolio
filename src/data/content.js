@@ -35,11 +35,11 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
-    title: "Project Name",
+    title: "Crypto Developer Health Score (CDHS)",
     description:
-      "A brief description .",
-    tags: ["React", "Node.js", "MongoDB"],
-    link: "#",
+      "A full-stack platform that scores 10 major crypto projects based on the health of their GitHub developer activity, not price. Built with FastAPI and React, it pulls data from GitHub and CoinGecko APIs, runs percentile-based scoring across 5 dimensions, and uses Pearson correlation to test whether developer activity actually predicts token price. The results challenged my hypothesis — turns out more dev activity doesn't mean higher prices.",
+    tags: ["Python", "FastAPI", "React", "NumPy", "SciPy"],
+    link: "https://github.com/Hadis-fa/github-quant-factor",
   },
   {
     title: "Another Project",

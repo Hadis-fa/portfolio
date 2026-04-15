@@ -52,7 +52,14 @@ export const PROJECTS = [
     title: "Musical Keyboard",
     description:
       "A physical MIDI keyboard built on a Raspberry Pi, with the sound engine written in C and wired to FluidSynth for synthesis. The fun part was getting the latency low enough to actually play. Hitting 46ms end to end from key press to audio out meant writing custom GPIO debounce logic in C instead of relying on the usual polling loops. That cut input errors by about 67% and crashes by about 33% over the naive implementation. Taught me thatreal-time on Linux is mostly a negotiation with the scheduler.",
-    tags: ["C", "Python", "Raspberry Pi", "WiringPi", "FluidSynth"],
+    tags: ["C", "Pytho", "Raspberry Pi", "WiringPi", "FluidSynth"],
     link: "https://github.com/Hadis-fa/musical-keyboard",
+  },
+      {
+    title: "Resume Categorizer System",
+    description:
+      "A machine learning pipeline that sorts resumes into job categories automatically, built to handle the messy reality of real-world resume data. The hard part wasn't the model itself but the imbalance: some job categories had hundreds of examples and others had a handful, so a naive classifier just learned to predict the majority class. Used SMOTE to rebalance the training set and landed on a Random Forest after testing a few options, which got it to 87% precision and 86% recall. Pandas, NLTK, and Gensim handled the text preprocessing, and Matplotlib plus Seaborn made it possible to actually see what the model was learning. Taught me that in ML, the dataset is usually the model.",
+    tags: ["Python", "Pandas", "Scikit-Learn", "NLTK", "Gensim", "SMOTE"],
+    link: "https://github.com/Hadis-fa/Resume-Categorizer-System",
   },
 ];

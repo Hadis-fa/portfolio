@@ -46,6 +46,13 @@ export const PROJECTS = [
     description:
       "A Flask web app that flips the usual travel search on its head: instead of picking a place and checking the weather, you pick the weather and it finds the place. Users enter a target temperature and the app queries a third-party climate API to return cities that actually match, with a responsive Bootstrap frontend so it works on phones too. Building it taught me more about defensive API design than anything else most of the work ended up being exception handling and rollback logic so a flaky upstream response wouldn't take the whole app down.",
     tags: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Bootstrap"],
-    link: "#",
+    link: "https://github.com/Hadis-fa/destination-climate",
+  },
+    {
+    title: "Musical Keyboard",
+    description:
+      "A physical MIDI keyboard built on a Raspberry Pi, with the sound engine written in C and wired to FluidSynth for synthesis. The fun part was getting the latency low enough to actually play. Hitting 46ms end to end from key press to audio out meant writing custom GPIO debounce logic in C instead of relying on the usual polling loops. That cut input errors by about 67% and crashes by about 33% over the naive implementation. Taught me thatreal-time on Linux is mostly a negotiation with the scheduler.",
+    tags: ["C", "Python", "Raspberry Pi", "WiringPi", "FluidSynth"],
+    link: "https://github.com/Hadis-fa/musical-keyboard",
   },
 ];
